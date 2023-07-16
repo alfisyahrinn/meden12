@@ -9,3 +9,23 @@ nav a.active {
   color: #000;
   font-weight: 500;
 }
+
+/* NulisRight */
+:root {
+  --size: 0;
+  --top: 0;
+  --bottom: 0;
+  --right: 0;
+  --left: 0;
+  --height: 0;
+}
+#mantap {
+  font-size: var(--size);
+  margin-top: var(--top);
+  margin-bottom: var(--bottom);
+  margin-right: var(--right);
+  margin-left: var(--left);
+  line-height: var(--height);
+}
+
+/* End NulsRight */
