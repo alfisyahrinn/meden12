@@ -18,6 +18,7 @@ nav a.active {
   --right: 0;
   --left: 0;
   --height: 0;
+  --font: Custom-1;
 }
 #mantap {
   font-size: var(--size);
@@ -27,5 +28,11 @@ nav a.active {
   margin-left: var(--left);
   line-height: var(--height);
 }
-
 /* End NulsRight */
+
+/* CustomFont */
+/* @font-face {
+  font-family: var(--font);
+  src: url('/src/assets/fonts/99HandWritting.ttf');
+} */
+/* End CustomFont */
