@@ -42,8 +42,7 @@ const dataFont = [
   { font: 'ZueyHandwriting-Regular.otf' },
 ];
 const dataKertas = [{ kertas: 'Hvs' }, { kertas: 'Duble Folio' }, { kertas: 'Kertas Jeruk' }];
-
-export default function NulisLeft({ setData, data }) {
+export default function NulisLeft({ setData, data, handleDownload }) {
   const [atribut, setAtribut] = useState({
     font: 'angelina.ttf',
     kertas: '',
@@ -62,6 +61,7 @@ export default function NulisLeft({ setData, data }) {
     src: url(/src/assets/fonts/${atribut.font});
   }
   `;
+
   return (
     <div className=" w-full ">
       <GlobalStyle />
@@ -119,8 +119,12 @@ export default function NulisLeft({ setData, data }) {
           <textarea onChange={handleData} name="text" id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-100 " placeholder="di negara saya banyak sekali tikus..."></textarea>
         </div>
         <div className="mt-[24px] space-x-[16px]">
-          <button className="w-[114px] h-9 bg-black text-white font-medium">Download</button>
-          <button className="w-[83px] h-9 border border-black font-medium">Hapus</button>
+          <button onClick={handleDownload} className="w-[114px] h-9 bg-black text-white font-medium">
+            Download
+          </button>
+          <button type="reset" className="w-[83px] h-9 border border-black font-medium">
+            Hapus
+          </button>
         </div>
       </form>
     </div>

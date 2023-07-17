@@ -1,5 +1,6 @@
 import React, { createRef } from 'react';
 import { Folio } from '../../assets/image/kertas';
+import html2canvas from 'html2canvas';
 
 export default function NulisRight({ data }) {
   document.documentElement.style.setProperty('--size', data.size + 'px');
@@ -10,10 +11,9 @@ export default function NulisRight({ data }) {
   document.documentElement.style.setProperty('--height', data.height + 'px');
   // const color = getComputedStyle(document.documentElement).getPropertyValue('--font');
   // console.log(color);
-  
 
   return (
-    <div className="w-[600px] bg-gray-100 p-2 h-fit relative">
+    <div id="image-container" className="w-[600px] bg-gray-100 p-2 h-fit relative">
       <img src={Folio} alt="" className="w-[350px]" />
       <p id="mantap" className="absolute font-custom1 top-0  px-3 mt-14" style={{ whiteSpace: 'pre-wrap' }}>
         {data.text}
