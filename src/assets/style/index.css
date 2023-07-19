@@ -31,20 +31,9 @@ nav a.active {
 }
 /* End NulsRight */
 
-/* CustomFont */
-/* @font-face {
-  font-family: var(--font);
-  src: url('/src/assets/fonts/99HandWritting.ttf');
-} */
 /* End CustomFont */
 #image-container {
-  /* overflow: scroll; */
-  /* background-image: url('../image/kertas/hvs.jpg'); */
-  /* background-image: url('../image/kertas/folio.png'); */
-  /* height: 100vh; */
   background-repeat: no-repeat;
   background-size: 100%;
   color: var(--color);
-  /* background-position: center top; */
-  /* background-attachment: fixed; */
 }
