@@ -1,6 +1,9 @@
 import React from 'react';
 
 export default function Shop() {
+  let fontName = 'itting.ttf';
+  let filter = fontName.slice(0, fontName.length - 4);
+  console.log(filter);
   return (
     <div className="text-red-500">
       Ini halaman <span className="font-bold">SHOPPING</span>

@@ -19,6 +19,7 @@ nav a.active {
   --left: 0;
   --height: 0;
   --font: Custom-1;
+  --color: #000;
 }
 #mantap {
   font-size: var(--size);
@@ -36,3 +37,14 @@ nav a.active {
   src: url('/src/assets/fonts/99HandWritting.ttf');
 } */
 /* End CustomFont */
+#image-container {
+  /* overflow: scroll; */
+  /* background-image: url('../image/kertas/hvs.jpg'); */
+  /* background-image: url('../image/kertas/folio.png'); */
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: var(--color);
+  /* background-position: center top; */
+  /* background-attachment: fixed; */
+}

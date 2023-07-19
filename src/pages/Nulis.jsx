@@ -4,12 +4,13 @@ import html2canvas from 'html2canvas';
 
 const dataAwal = {
   size: 12,
-  height: 14,
+  height: 14.5,
   top: 56,
   bottom: 0,
   right: 12,
   left: 12,
   text: '',
+  color: '#000',
 };
 export default function NulisComponent() {
   const [data, setData] = useState(dataAwal);
@@ -26,7 +27,7 @@ export default function NulisComponent() {
     });
   };
   return (
-    <div className="flex gap-[110px] items-center">
+    <div className="flex gap-[110px] items-center overflow-x-hidden">
       <NulisLeft setData={setData} data={data} handleDownload={handleDownload} />
       <NulisRight data={data} />
     </div>
