@@ -2,9 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-#container {
-  padding: 20px 93px 0 93px;
+/* @media (min-width: 2135px) {
+  #container {
+    padding: 20px 93px 0 93px;
+  }
 }
+#container {
+  padding: 10px 10px 0 10px;
+} */
 nav a.active {
   color: #000;
   font-weight: 500;

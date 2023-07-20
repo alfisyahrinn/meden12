@@ -67,13 +67,13 @@ export default function NulisLeft({ setData, data, handleDownload }) {
   `;
 
   return (
-    <div className=" w-full ">
+    <div className="w-full mt-[16px]">
       <GlobalStyle />
       <form action="">
         <div className="flex gap-3">
           <div className="w-full space-y-[8px]">
             <label className="text-[16px]">Font</label>
-            <select id="font" className="py-3 px-4 pr-9 block w-full text-sm bg-gray-100 " value={atribut.font} name="font" onChange={handleAtribut}>
+            <select id="font" className="py-3 px-4  block w-full text-sm bg-gray-100 " value={atribut.font} name="font" onChange={handleAtribut}>
               {dataFont.map((item, index) => (
                 <option className="text-gray-600" value={item.font} key={index}>
                   {item.font.slice(0, item.font.length - 4)}
@@ -83,7 +83,7 @@ export default function NulisLeft({ setData, data, handleDownload }) {
           </div>
           <div className="w-full space-y-[8px]">
             <label className="text-[16px]">Kertas</label>
-            <select id="kertas" name="kertas" value={atribut.kertas} onChange={handleAtribut} className="py-3 px-4 pr-9 block w-full text-sm bg-gray-100 ">
+            <select id="kertas" name="kertas" value={atribut.kertas} onChange={handleAtribut} className="py-3 px-4  block w-full text-sm bg-gray-100 ">
               {dataKertas.map((item, index) => (
                 <option className="text-gray-600" value={item.kertas} key={index}>
                   {item.kertas.slice(0, item.kertas.length - 4)}
@@ -92,31 +92,30 @@ export default function NulisLeft({ setData, data, handleDownload }) {
             </select>
           </div>
         </div>
-        <div className="flex gap-3 mt-[24px]">
+        <div className="flex gap-3 mt-[24px] lg:flex-nowrap flex-wrap">
           <div className="space-y-[8px]">
             <label className="text-[16px]">Size</label>
-            <input name="size" value={data.size} onChange={handleData} id="size" type="number" className="py-3 px-4 pr-9 block w-full text-sm bg-gray-100 " />
+            <input name="size" value={data.size} onChange={handleData} id="size" type="number" className="py-3 px-4 block w-[140px] lg:w-full text-sm bg-gray-100 " />
           </div>
           <div className="space-y-[8px]">
             <label className="text-[16px]">Line Height</label>
-            <input name="height" value={data.height} onChange={handleData} id="height" type="text" className="py-3 px-4 pr-9 block w-full text-sm bg-gray-100 " />
+            <input name="height" value={data.height} onChange={handleData} id="height" type="text" className="py-3 px-4  block w-[140px] lg:w-full text-sm bg-gray-100 " />
           </div>
           <div className="space-y-[8px]">
             <label className="text-[16px]">Top</label>
-            <input name="top" value={data.top} onChange={handleData} id="top" type="number" className="py-3 px-4 pr-9 block w-full text-sm bg-gray-100 " />
+            <input name="top" value={data.top} onChange={handleData} id="top" type="number" className="py-3 px-4  block w-[140px] text-sm lg:w-full bg-gray-100 " />
           </div>
-
           <div className="space-y-[8px] hidden">
             <label className="text-[16px]">Bottom</label>
-            <input name="bottom" value={data.bottom} onChange={handleData} id="bottom" type="number" className="py-3 px-4 pr-9 block w-full text-sm bg-gray-100 " />
+            <input name="bottom" value={data.bottom} onChange={handleData} id="bottom" type="number" className="py-3 px-4  block w-[140px] lg:w-full text-sm bg-gray-100 " />
           </div>
           <div className="space-y-[8px]">
             <label className="text-[16px]">Right</label>
-            <input value={data.right} name="right" onChange={handleData} id="right" type="number" className="py-3 px-4 pr-9 block w-full text-sm bg-gray-100 " />
+            <input value={data.right} name="right" onChange={handleData} id="right" type="number" className="py-3 px-4  block w-[140px] lg:w-full text-sm bg-gray-100 " />
           </div>
           <div className="space-y-[8px]">
             <label className="text-[16px]">Left</label>
-            <input value={data.left} id="left" onChange={handleData} name="left" type="number" className="py-3 px-4 pr-9 block w-full text-sm bg-gray-100 " />
+            <input value={data.left} id="left" onChange={handleData} name="left" type="number" className="py-3 px-4  block w-[140px] lg:w-full text-sm bg-gray-100 " />
           </div>
           <div className="space-y-[8px]">
             <label className="text-[16px]">Color</label>
@@ -128,7 +127,7 @@ export default function NulisLeft({ setData, data, handleDownload }) {
           <textarea onChange={handleData} name="text" id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-100 " placeholder="di negara saya banyak sekali tikus..."></textarea>
         </div>
 
-        <div className="mt-[24px] space-x-[16px]">
+        <div className="my-[24px] space-x-[16px]">
           <button onClick={handleDownload} className="w-[114px] h-9 bg-black text-white font-medium">
             Download
           </button>
