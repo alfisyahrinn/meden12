@@ -27,7 +27,7 @@ export default function NulisComponent() {
     });
   };
   return (
-    <div className="flex flex-col-reverse lg:flex-row lg:gap-[110px] lg:items-center content-center">
+    <div className="flex flex-col-reverse lg:flex-row lg:gap-[110px] lg:items-center content-center ">
       <NulisLeft setData={setData} data={data} handleDownload={handleDownload} />
       <NulisRight data={data} />
     </div>

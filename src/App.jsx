@@ -6,7 +6,7 @@ import { NavbarComponents } from './components';
 export default function App() {
   return (
     <BrowserRouter>
-      <section id="container" className="pt-[10px] px-[10px] lg:pt-[20px] lg:px-[98px]">
+      <section id="container" className="pt-[10px] px-[10px] lg:pt-[20px] lg:px-[98px] ">
         <NavbarComponents />
         <main>
           <Routes>
