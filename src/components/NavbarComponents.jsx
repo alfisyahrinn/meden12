@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 export default function NavbarComponents() {
-  const [navActive, setNavActive] = useState(false);
+  const [navActive, setNavActive] = useState(true);
   const handleNavbar = () => {
     console.log(navActive);
     setNavActive(!navActive);
