@@ -25,7 +25,7 @@ export default function NavbarComponents() {
         <NavLink to="nulis" className="block md:flex [&:not(:hover)]:opacity-50 active:text-blue-800 active:font-medium text-gray-500">
           Nulis
         </NavLink>
-        <NavLink to="shop" className="hidden  md:flex [&:not(:hover)]:opacity-50 active:text-blue-800 active:font-medium text-gray-500">
+        <NavLink to="shop" className="hidden  md:hidden [&:not(:hover)]:opacity-50 active:text-blue-800 active:font-medium text-gray-500">
           Shop
         </NavLink>
       </nav>
