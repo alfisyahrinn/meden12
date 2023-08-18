@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
-import Angelina from '../../assets/fonts/angelina.ttf';
 const dataFont = [
   { font: '212BabyGirl.otf' },
   { font: '212LeahleeSans.ttf' },
@@ -49,6 +48,7 @@ export default function NulisLeft({ setData, data, handleDownload }) {
   });
   console.log(atribut);
   const handleAtribut = (e) => {
+    console.log(e.target.value);
     setAtribut({ ...atribut, [e.target.name]: e.target.value });
   };
   const handleData = (e) => {
@@ -59,10 +59,10 @@ export default function NulisLeft({ setData, data, handleDownload }) {
   const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Custom-1';
-    src: url(/src/assets/fonts/${atribut.font});
+    src: url(/fonts/${atribut.font});
   }
   #image-container{
-    background-image: url('/src/assets/image/kertas/${atribut.kertas}');
+    background-image: url('/kertas/${atribut.kertas}');
   }
   `;
 

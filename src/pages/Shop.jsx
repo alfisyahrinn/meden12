@@ -1,5 +1,4 @@
 import React from 'react';
-
 export default function Shop() {
   let fontName = 'itting.ttf';
   let filter = fontName.slice(0, fontName.length - 4);
